@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-base-white: #FFF;
+  --color-base-white-100: #F4FCFF;
+  --color-base-black: #121214;
+  --color-base-black-100: #202024;
+  --color-base-blue: #065E7C;
+  --color-base-blue-100: #387E96;
+
+  font-size: 62.5%;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-base-black);
+  background-color: var(--color-base-white);
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+.container {
+  width: min(121.6rem, 87%);
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 7.2rem;
+  background-color: var(--color-base-blue);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2.55rem;
+}
+
+nav form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  border-radius: .4rem;
+  border: none;
+  outline: none;
+  color: var(--color-base-white);
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.input-wrapper input::placeholder {
+  color: var(--color-base-white);
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
