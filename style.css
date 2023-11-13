@@ -106,3 +106,25 @@ main h1 {
   line-height: 3.84rem;
   color: var(--color-base-black-100);
 }
+
+.wrapper-action-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-base-blue);
+}
+
+.action-button img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
