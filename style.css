@@ -128,3 +128,11 @@ main h1 {
   width: 1.6rem;
   height: 1.6rem;
 }
+
+main p {
+  line-height: 2.56rem;
+}
+
+main p + p {
+  margin-bottom: 3.2rem;
+}
