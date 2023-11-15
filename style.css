@@ -141,6 +141,51 @@ aside h2 {
   margin-bottom: 3.2rem;
 }
 
-.aside-subtitle {
+.more-articles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  margin-bottom: 4.2rem;
+}
+
+.more-articles__subtitle {
   margin-bottom: 0;
+}
+
+.article-card {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.6rem;
+  text-decoration: none;
+}
+
+.article-card__img {
+  width: 15.1rem;
+  height: 8.4rem;
+}
+
+.article-card__img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.article-card__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.article-card__description h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.88rem;
+  color: var(--color-base-black-100);
+}
+
+.article-card__description p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.24rem;
+  color: var(--color-base-black);
 }
