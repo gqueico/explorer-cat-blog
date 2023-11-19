@@ -129,6 +129,17 @@ aside h2 {
   border: none;
   border-radius: 50%;
   background-color: var(--color-base-blue);
+  cursor: pointer;
+
+  transition: transform 300ms ease-in-out;
+}
+
+.action-button:hover {
+  transform: translateY(-5px);
+}
+
+.action-button.deslike:hover {
+  transform: translateY(5px);
 }
 
 .action-button img {
@@ -160,6 +171,12 @@ aside h2 {
   align-items: center;
   column-gap: 1.6rem;
   text-decoration: none;
+
+  transition: all 300ms ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
 }
 
 .article-card__img {
