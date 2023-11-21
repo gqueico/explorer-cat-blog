@@ -260,6 +260,10 @@ footer p {
 }
 
 @media(min-width: 1024px) {
+  body {
+    background-color: var(--color-base-white-100);
+  }
+  
   #app header {
     grid-column: 1/4;
   }
