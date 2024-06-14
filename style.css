@@ -54,11 +54,22 @@ nav {
   justify-content: space-between;
   column-gap: 2.55rem;
   height: 7.2rem;
-
+  
   animation-name: move;
   animation-duration: .2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+}
+
+nav a {
+  line-height: 0;
+}
+
+.logo,
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
 }
 
 nav form {
@@ -87,12 +98,6 @@ nav form {
 
 .input-wrapper input::placeholder {
   color: var(--color-base-white);
-}
-
-.avatar {
-  width: 4.2rem;
-  height: 4.2rem;
-  border-radius: 50%;
 }
 
 main {
@@ -140,10 +145,10 @@ aside h2 {
   background-color: var(--color-base-blue);
   cursor: pointer;
 
-  transition: transform 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
-.action-button:hover {
+.action-button.like:hover {
   transform: translateY(-5px);
 }
 
