@@ -183,7 +183,8 @@ aside h2 {
 
 .article-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   column-gap: 1.6rem;
   text-decoration: none;
 
